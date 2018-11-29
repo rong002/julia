@@ -55,6 +55,7 @@ External dependencies
 ---------------------
 
   * 7zip (bundled with Julia on Windows) have been upgraded from version 16.04 to 18.05 ([#30035]).
+  * Busybox is no longer bundled with Julia on Windows ([#30022]).
 
 Deprecated or removed
 ---------------------
