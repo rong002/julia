@@ -51,6 +51,10 @@ Standard library changes
 Compiler/Runtime improvements
 -----------------------------
 
+External dependencies
+---------------------
+
+  * 7zip (bundled with Julia on Windows) have been upgraded from version 16.04 to 18.05 ([#30035]).
 
 Deprecated or removed
 ---------------------
