@@ -694,6 +694,9 @@ Finite difference operator on a vector or a multidimensional array `A`. In the
 latter case the dimension to operate on needs to be specified with the `dims`
 keyword argument.
 
+!!! compat "Julia 1.1"
+    `diff` for arrays with dimension higher than 2 requires at least Julia 1.1.
+
 # Examples
 ```jldoctest
 julia> a = [2 4; 6 16]
