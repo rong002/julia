@@ -47,6 +47,8 @@ Standard library changes
   * `Base.tail` now works on named tuples ([#29595]).
   * `randperm` and `randcycle` now use the type of their argument to determine the element type of
     the returned array ([#29670]).
+  * The process id is appended to malloc log files in order to track memory allocations of
+    multiple processes ([#29969]).
 
 Compiler/Runtime improvements
 -----------------------------
