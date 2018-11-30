@@ -53,6 +53,7 @@ Standard library changes
   * `Base.julia_cmd` now propagates the `--inline=(yes|no)` flag ([#29858]).
   * New `DateTime(::Date, ::Time)` constructor ([#29754]).
   * `isdiag` and `isposdef` for `Diagonal` and `UniformScaling` ([#29638]).
+  * `mul!`, `rmul!` and `lmul!` methods for `UniformScaling` ([#29506]).
   * New `edit(m::Module)` method which opens the main source file for module `m` ([#29636]).
 
 Compiler/Runtime improvements
