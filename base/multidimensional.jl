@@ -211,6 +211,27 @@ module IteratorsMD
     CartesianIndex(1, 2)
     ```
 
+    ## Broadcasting
+
+    `CartesianIndices` support broadcasting arithmetic (+ and -) with a `CartesianIndex`.
+
+    !!! compat "Julia 1.1"
+    Broadcasting of CartesianIndices requires at least Julia 1.1.
+
+    ```jldoctest
+    julia> CartesianIndices(rand(1,2))
+    1×2 CartesianIndices{2,Tuple{Base.OneTo{Int64},Base.OneTo{Int64}}}:
+     CartesianIndex(1, 1)  CartesianIndex(1, 2)
+
+    julia> CI = CartesianIndex(3, 4)
+    CartesianIndex(3, 4)
+
+    julia> CIs .+ CI
+    2×2 CartesianIndices{2,Tuple{UnitRange{Int64},UnitRange{Int64}}}:
+     CartesianIndex(4, 5)  CartesianIndex(4, 6)
+     CartesianIndex(5, 5)  CartesianIndex(5, 6)
+    ```
+
     For cartesian to linear index conversion, see [`LinearIndices`](@ref).
     """
     struct CartesianIndices{N,R<:NTuple{N,AbstractUnitRange{Int}}} <: AbstractArray{CartesianIndex{N},N}
