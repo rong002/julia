@@ -49,6 +49,7 @@ Standard library changes
     the returned array ([#29670]).
   * The process id is appended to malloc log files in order to track memory allocations of
     multiple processes ([#29969]).
+  * `Base.julia_cmd` now propagates the `--inline=(yes|no)` flag ([#29858]).
 
 Compiler/Runtime improvements
 -----------------------------
