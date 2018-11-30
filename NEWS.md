@@ -50,6 +50,7 @@ Standard library changes
   * The process id is appended to malloc log files in order to track memory allocations of
     multiple processes ([#29969]).
   * `Base.julia_cmd` now propagates the `--inline=(yes|no)` flag ([#29858]).
+  * New `DateTime(::Date, ::Time)` constructor ([#29754]).
 
 Compiler/Runtime improvements
 -----------------------------
