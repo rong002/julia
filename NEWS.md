@@ -51,6 +51,7 @@ Standard library changes
     multiple processes ([#29969]).
   * `Base.julia_cmd` now propagates the `--inline=(yes|no)` flag ([#29858]).
   * New `DateTime(::Date, ::Time)` constructor ([#29754]).
+  * `isdiag` and `isposdef` for `Diagonal` and `UniformScaling` ([#29638]).
 
 Compiler/Runtime improvements
 -----------------------------
